@@ -1,0 +1,25 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+/* 어떤 버전이든 무조건 다크모드 글씨색 강제 적용 */
+:root[data-theme="dark"],
+html[data-theme="dark"],
+html[data-mode="dark"],
+html[data-bs-theme="dark"],
+body[data-theme="dark"] {
+  --text-color: #f0f0f0 !important;       
+  --heading-color: #ffffff !important;    
+  --text-muted-color: #b0b0b0 !important; 
+}

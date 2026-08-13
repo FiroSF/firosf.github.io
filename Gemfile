@@ -12,3 +12,7 @@ platforms :windows, :jruby do
 end
 
 gem "wdm", "~> 0.2.0", :platforms => [:windows]
+
+gem "erb", "~> 6.0"
+
+gem "webrick", "~> 1.9"
