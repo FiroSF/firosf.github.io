@@ -47,7 +47,7 @@ social:
 
 # Site Verification Settings
 webmaster_verifications:
-  google: # fill in your Google verification code
+  google: "GdbH3DDhp9w4mB_mgDHKEEhzF2DvGZjTIcMWJ-N1vs0"
   bing: # fill in your Bing verification code
   alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code
@@ -236,6 +236,4 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-
-google_site_verification: "GdbH3DDhp9w4mB_mgDHKEEhzF2DvGZjTIcMWJ-N1vs0"
 
