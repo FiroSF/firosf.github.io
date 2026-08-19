@@ -1,0 +1,140 @@
+{
+	// Place your firosf.github.io workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	//
+	// You can also restrict snippets to specific files using include/exclude patterns:
+	// "Test snippet": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "test",
+	// 	"body": "test('$1', () => {\n\t$0\n});",
+	// 	"include": ["**/*.test.ts", "*.spec.ts"],
+	// 	"exclude": ["**/temp/*.ts"],
+	// 	"description": "Insert test block"
+	// }
+	"PS Post Template": {
+		"prefix": "pspost",
+		"body": [
+			"---",
+			"title: \"[${1:BOJ} ${2:문제번호}] ${3:문제이름}\"",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND +0900",
+			"last_modified_at:",
+			"categories: [PS, ${4:백준}]",
+			"tags: [${5:알고리즘}]",
+			"description: ",
+			"math: true",
+			"---",
+			"",
+			"## 문제 풀이",
+			"",
+			"${6:이곳에 핵심 아이디어를 적어주세요.}",
+			"",
+			"## 소스 코드",
+			"",
+			"```cpp",
+			"$0",
+			"```"
+		],
+		"description": "Jekyll PS 포스트 양식 (현재 시간 자동 입력)"
+	},
+	"Current time": {
+		"prefix": "ts",
+		"body": [
+			"$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND +0900"
+		],
+		"description": "현재시간 작성"
+	},
+	"Codeforces Post Template": {
+		"prefix": "cfpost",
+		"body": [
+			"---",
+			"title: \"[Codeforces] Round ${1:1000} ${2|Div. 2,Div. 1,Div. 3,Div. 4,Div. 1 + Div. 2,Educational|}\"",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND +0900",
+			"last_modified_at:",
+			"categories: [Codeforces]",
+			"tags: [Codeforces]",
+			"description: 코드포스 라운드 ${1:1000} ${2:Div. 2} 풀이와 후기",
+			"math: true",
+			"---",
+			"",
+			"<!-- #999999 #33cc33 #44ddaa #2222ff #aa00ff #ff9900 #ff2222 -->",
+			"",
+			"## 개요",
+			"",
+			"$3",
+			"",
+			"## 문제",
+			"",
+			"### [${4:A}번](https://codeforces.com/contest/${5:contest_id}/problem/${4:A})",
+			"",
+			"",
+			"* ${6:설명}",
+			"* **분류**: ${7:정렬, 그리디}",
+			"",
+			"|                            체감 난이도                             |                    레이팅 (CLIST) 난이도                     |",
+			"| :----------------------------------------------------------------: | :----------------------------------------------------------: |",
+			"| <img src=\"/assets/img/tier/${8:8}.png\" alt=\"${9:S3}\" width=\"20\"> | <span style=\"color: ${10|#33cc33,#999999,#44ddaa,#2222ff,#aa00ff,#ff9900,#ff2222|}; font-weight: bold;\">${11:1234}</span> |",
+			"",
+			"<details>",
+			"<summary>코드</summary>",
+			"<div markdown=\"1\">",
+			"",
+			"{% raw %}",
+			"```cpp",
+			"$12",
+			"```",
+			"{% endraw %}",
+			"",
+			"</div>",
+			"</details>",
+			"",
+			"",
+			"## 후기",
+			"",
+			"$0"
+		],
+		"description": "Codeforces 라운드 포스트 양식"
+	},
+	"Codeforces Problem Block": {
+		"prefix": "cfprob",
+		"body": [
+			"### [${1:B}번](https://codeforces.com/contest/${2:contest_id}/problem/${1:B})",
+			"",
+			"",
+			"* ${3:설명}",
+			"* **분류**: ${4:분류}",
+			"",
+			"|                            체감 난이도                             |                    레이팅 (CLIST) 난이도                     |",
+			"| :----------------------------------------------------------------: | :----------------------------------------------------------: |",
+			"| <img src=\"/assets/img/tier/${5:8}.png\" alt=\"${6:S3}\" width=\"20\"> | <span style=\"color: ${7|#33cc33,#999999,#44ddaa,#2222ff,#aa00ff,#ff9900,#ff2222|}; font-weight: bold;\">${8:1234}</span> |",
+			"",
+			"<details>",
+			"<summary>코드</summary>",
+			"<div markdown=\"1\">",
+			"",
+			"{% raw %}",
+			"```cpp",
+			"$0",
+			"```",
+			"{% endraw %}",
+			"",
+			"</div>",
+			"</details>",
+			""
+		],
+		"description": "Codeforces 문제 풀이 블록 추가"
+	}
+}

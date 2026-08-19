@@ -21,6 +21,7 @@ package-lock.json
 !.vscode/settings.json
 !.vscode/extensions.json
 !.vscode/tasks.json
+!.vscode/blog.code-snippets
 
 # Misc
 _sass/vendors
@@ -31,5 +32,8 @@ assets/js/dist
 .DS_Store
 Thumbs.db
 
-# 커스텀
-.vscode
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+

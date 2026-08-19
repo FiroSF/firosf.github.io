@@ -23,3 +23,69 @@ body[data-theme="dark"] {
   --heading-color: #ffffff !important;    
   --text-muted-color: #b0b0b0 !important; 
 }
+
+/* ===================================================
+   Monokai Codeblock Theme
+   =================================================== */
+div[class*="language-"] pre,
+div[class*="language-"] code,
+figure.highlight,
+.highlight {
+  background-color: #272822 !important;
+  color: #f8f8f2 !important;
+}
+
+/* Rouge Monokai Syntax Highlighting */
+.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf, .highlight .cm, .highlight .c1 {
+  color: #75715e !important;
+  font-style: italic !important;
+}
+.highlight .cp, .highlight .cs {
+  color: #75715e !important;
+  font-weight: bold !important;
+}
+.highlight .err {
+  color: #960050 !important;
+  background-color: #1e0010 !important;
+}
+.highlight .gi {
+  color: #ffffff !important;
+  background-color: #324932 !important;
+}
+.highlight .gd {
+  color: #ffffff !important;
+  background-color: #493131 !important;
+}
+.highlight .ge { font-style: italic !important; }
+.highlight .ges { font-weight: bold !important; font-style: italic !important; }
+.highlight .k, .highlight .kc, .highlight .kd, .highlight .kp, .highlight .kr, .highlight .kt, .highlight .kv {
+  color: #66d9ef !important;
+  font-weight: bold !important;
+}
+.highlight .kn, .highlight .ow, .highlight .o, .highlight .nt {
+  color: #f92672 !important;
+  font-weight: bold !important;
+}
+.highlight .mf, .highlight .mh, .highlight .il, .highlight .mi, .highlight .mo, .highlight .m, .highlight .mb, .highlight .mx, .highlight .se {
+  color: #ae81ff !important;
+}
+.highlight .sa {
+  color: #66d9ef !important;
+  font-weight: bold !important;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss, .highlight .dl {
+  color: #e6db74 !important;
+}
+.highlight .na, .highlight .nc, .highlight .nd, .highlight .ne, .highlight .nf, .highlight .fm {
+  color: #a6e22e !important;
+  font-weight: bold !important;
+}
+.highlight .no {
+  color: #66d9ef !important;
+}
+.highlight .bp, .highlight .nb, .highlight .ni, .highlight .nn, .highlight .vc, .highlight .vg, .highlight .vi, .highlight .nv, .highlight .vm, .highlight .w, .highlight .nl {
+  color: #f8f8f2 !important;
+}
+

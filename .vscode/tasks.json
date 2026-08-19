@@ -21,6 +21,20 @@
       },
       "problemMatcher": [],
       "detail": "Build the Jekyll site for production."
+    },
+    {
+      "label": "Generate Codeforces Post",
+      "type": "shell",
+      "command": "python3 scripts/generate_cf_post.py \"${input:contestIdOrUrl}\"",
+      "problemMatcher": [],
+      "detail": "Generate a Codeforces review post with CF & CLIST data."
+    }
+  ],
+  "inputs": [
+    {
+      "id": "contestIdOrUrl",
+      "type": "promptString",
+      "description": "Enter Codeforces Contest ID or URL (e.g. 2257 or https://codeforces.com/contest/2257):"
     }
   ]
 }
