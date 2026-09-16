@@ -89,3 +89,56 @@ figure.highlight,
   color: #f8f8f2 !important;
 }
 
+/* ===================================================
+   Difficulty (Tier) Colors & Gradients
+   b: #ad5600, s: #2e3c56, g: #ec9a00, p: #27e2a4, d: #00b4fc, r: #ff0062
+   =================================================== */
+.diff-b { color: #ad5600 !important; font-weight: bold; }
+.diff-s { color: #2e3c56 !important; font-weight: bold; }
+.diff-g { color: #ec9a00 !important; font-weight: bold; }
+.diff-p { color: #27e2a4 !important; font-weight: bold; }
+.diff-d { color: #00b4fc !important; font-weight: bold; }
+.diff-r { color: #ff0062 !important; font-weight: bold; }
+
+.diff-bs {
+  font-weight: bold;
+  display: inline-block;
+  background: linear-gradient(to right, #ad5600, #2e3c56);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.diff-sg {
+  font-weight: bold;
+  display: inline-block;
+  background: linear-gradient(to right, #2e3c56, #ec9a00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.diff-gp {
+  font-weight: bold;
+  display: inline-block;
+  background: linear-gradient(to right, #ec9a00, #27e2a4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.diff-pd {
+  font-weight: bold;
+  display: inline-block;
+  background: linear-gradient(to right, #27e2a4, #00b4fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.diff-dr {
+  font-weight: bold;
+  display: inline-block;
+  background: linear-gradient(to right, #00b4fc, #ff0062);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+

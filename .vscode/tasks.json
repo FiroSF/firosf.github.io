@@ -28,6 +28,13 @@
       "command": "python3 scripts/generate_cf_post.py \"${input:contestIdOrUrl}\"",
       "problemMatcher": [],
       "detail": "Generate a Codeforces review post with CF & CLIST data."
+    },
+    {
+      "label": "Generate Centroid Cup Post",
+      "type": "shell",
+      "command": "python3 scripts/generate_centroidcup_post.py \"${input:csvFilePath}\" \"${input:postTitle}\"",
+      "problemMatcher": [],
+      "detail": "Generate an Onsite / Centroid Cup review post from submissions CSV."
     }
   ],
   "inputs": [
@@ -35,6 +42,18 @@
       "id": "contestIdOrUrl",
       "type": "promptString",
       "description": "Enter Codeforces Contest ID or URL (e.g. 2257 or https://codeforces.com/contest/2257):"
+    },
+    {
+      "id": "csvFilePath",
+      "type": "promptString",
+      "description": "Enter Submissions CSV path:",
+      "default": "submissions.csv"
+    },
+    {
+      "id": "postTitle",
+      "type": "promptString",
+      "description": "Enter Post Title (e.g. Centroid Cup 2026 후기):",
+      "default": "Centroid Cup 2026 후기"
     }
   ]
 }

@@ -23,12 +23,14 @@
 
 ### 참가자로 참가한 대회
 
-- `2023 ICPC`: 팀전(Bogosort), 예선탈락
+- `2023 ICPC`: 팀전(Bogosort), 예선 탈락
 - `2024 IUPC`: 개인전, 2등, 금상
 - `2024 IGRUS Newbie Programming Contest`: 개인전, 2등, 금상
 - `2024 UCPC`: 팀전(꽁꽁얼어붙은~), 
 - [2024 ICPC](https://static.icpckorea.net/2024/regional/scoreboard/): 팀전(REJECTED), 45등
 - [2024 shake!](https://shake.codes/results/2024): 개인전, 8등
+- `2026 SCPC`: 개인전, 본선 진출
+- `2026 Centroid Cup`: 팀전(便利屋68), 3등
 
 ### 운영진으로 참가한 대회
 

@@ -561,9 +561,6 @@ def main():
         md_lines.append("")
 
         if has_submissions:
-            md_lines.append("* 설명")
-            md_lines.append(f"* **분류**: {p_tags}")
-            md_lines.append("")
             md_lines.append(
                 "|                            체감 난이도                             |                    레이팅 (CLIST) 난이도                     | 대회 결과 |"
             )
@@ -573,10 +570,14 @@ def main():
             md_lines.append(
                 f"| <img src=\"/assets/img/tier/{pa['tier_num']}.png\" alt=\"{pa['tier_name']}\" width=\"20\"> | {pa['rating_html']} | {pa['table_result']} |"
             )
-        else:
-            md_lines.append("* 미래의 내가 업솔빙한다면 업데이트 예정")
-            md_lines.append("* **분류**: ")
             md_lines.append("")
+            md_lines.append("* 설명")
+            md_lines.append(f"* **분류**: {p_tags}")
+            md_lines.append("")
+            md_lines.append("#### 고찰")
+            md_lines.append("")
+            md_lines.append("* ")
+        else:
             md_lines.append(
                 "|                             체감 난이도                             |                    레이팅 (CLIST) 난이도                     | 대회 결과 |"
             )
@@ -586,6 +587,9 @@ def main():
             md_lines.append(
                 f"| <img src=\"/assets/img/tier/0.png\" alt=\"??\" width=\"20\"> | {pa['rating_html']} |     -     |"
             )
+            md_lines.append("")
+            md_lines.append("* 미래의 내가 업솔빙한다면 업데이트 예정")
+            md_lines.append("* **분류**: ")
 
         md_lines.append("")
         md_lines.append("<details>")

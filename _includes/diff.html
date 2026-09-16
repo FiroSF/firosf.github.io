@@ -1,0 +1,1 @@
+{%- assign cls = include.d | default: include.diff | default: include.class | default: "b" | downcase -%}{%- assign txt = include.text | default: include.t | default: include.title -%}{%- unless cls contains "diff-" -%}{%- assign cls = "diff-" | append: cls -%}{%- endunless -%}<span class="{{ cls }}">{{ txt }}</span>
